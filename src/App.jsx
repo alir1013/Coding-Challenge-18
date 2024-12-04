@@ -12,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
 
-    fetch('financial_data.json') //Loads chart data from a JSON file
+    fetch('/financial_data.json') //Loads chart data from a JSON file
 
       .then((response) => response.json())
       .then((data) => setChartData(data)); //Updates the state with the fetched data
