@@ -1,10 +1,9 @@
 //Task 4:Fetch Data for Charts
-
 import React, { useState, useEffect } from 'react';
-import BarChart from './components/BarChart';
-import LineChart from './components/LineChart';
-import ScatterChart from './components/ScatterChart';
-import BubbleChart from './components/BubbleChart';
+import BarChart from './BarChart';
+import LineChart from './LineChart';
+import ScatterChart from './ScatterChart';
+import BubbleChart from './BubbleChart';
 
 const App = () => {
 

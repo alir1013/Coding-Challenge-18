@@ -1,6 +1,6 @@
 //Task 3: LineChart
 import React from 'react';
-import ChartComponent from 'ChartComponent';
+import { Line } from 'react-chartjs-2';
 
 //Creating Specific Chart Components 
 const LineChart = ({ data }) => {
@@ -28,6 +28,7 @@ const LineChart = ({ data }) => {
 
       //Passes type, data, and options props to ChartComponent to render the line chart
       return <ChartComponent type="line" data={lineChartData} options={lineChartOptions} />;
+ 
     };
 
     export default LineChart;

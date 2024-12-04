@@ -1,6 +1,6 @@
 //Task 3: ScatterChart
 import React from 'react';
-import ChartComponent from 'ChartComponent';
+import { Scatter } from 'react-chartjs-2';
 
 
 //Creating Specific Chart Components 
