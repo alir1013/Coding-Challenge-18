@@ -1,4 +1,6 @@
 //Task 3: BarChart
+import React from 'react';
+import ChartComponent from './ChartComponent';
 
 //Creating Specific Chart Components 
 const BarChart = ({ data }) => {
