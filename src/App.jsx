@@ -18,6 +18,28 @@ const App = () => {
       .then((data) => setChartData(data)); //Updates the state with the fetched data
 
   }, []);
-}
+  
+//Task 5: Render Charts in the App
 
-  export default App;
+  //Displays a loading message while the chartData is being fetched
+  if (!chartData) {
+    return <div>Page is Loading...</div>; 
+  }
+
+  return (
+
+    <div style={{ textAlign: 'center' }}>
+
+      <h1>Dynamic Chart Dashboard </h1>
+      
+      */ Renders each chart component, passing chartData as the data prop */
+      <BarChart data={chartData} />
+      <LineChart data={chartData} />
+      <ScatterChart data={chartData} />
+      <BubbleChart data={chartData} />
+    </div>
+  );
+};
+
+export default App;
+
