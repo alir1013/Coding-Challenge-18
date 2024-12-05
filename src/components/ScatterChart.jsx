@@ -1,6 +1,6 @@
 //Task 3: ScatterChart
 import React from 'react';
-import { Scatter } from 'react-chartjs-2';
+import ChartComponent from './ChartComponent';
 
 
 //Creating Specific Chart Components 
@@ -19,21 +19,29 @@ const ScatterChart = ({ data }) => {
     const scatterChartOptions = {
     // Configures the chart axes
     //Displays expenses vs. profits
-      scales: {
-        x: {
-          title: {
-            display: true,
-            text: 'Expenses',
-          },
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'Expenses',
         },
-        y: {
-          title: {
-            display: true,
-            text: 'Profits',
-          },
+        ticks: {
+          min: 0, 
+          max: 500,
         },
       },
-    };
+      y: {
+        title: {
+          display: true,
+          text: 'Profits',
+        },
+        ticks: {
+          min: 10, 
+          max: 500,
+        },
+      },
+    },
+  };
   
     //Passes type, data, and options props to ChartComponent to render the scatter chart
     return <ChartComponent type="scatter" data={scatterChartData} options={scatterChartOptions} />;

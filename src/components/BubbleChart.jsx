@@ -1,6 +1,6 @@
 //Task 3: BubbleChart
 import React from 'react';
-import { Bubble } from 'react-chartjs-2';
+import ChartComponent from './ChartComponent';
 
 
 //Creating Specific Chart Components 
@@ -25,20 +25,27 @@ const BubbleChart = ({ data }) => {
             display: true,
             text: 'Sales',
           },
+          ticks: {
+            min: 0, 
+            max: 500,
+          },
         },
         y: {
           title: {
             display: true,
             text: 'Profits',
           },
+          ticks: {
+            min: 10, 
+            max: 500,
+          },
         },
       },
     };
-  
+
     //Passes type, data, and options props to ChartComponent to render the bubble chart
     return <ChartComponent type="bubble" data={bubbleChartData} options={bubbleChartOptions} />;
 
   };
   
   export default BubbleChart;
-

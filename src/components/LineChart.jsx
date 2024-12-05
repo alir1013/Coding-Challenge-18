@@ -1,6 +1,6 @@
 //Task 3: LineChart
 import React from 'react';
-import { Line } from 'react-chartjs-2';
+import ChartComponent from './ChartComponent';
 
 //Creating Specific Chart Components 
 const LineChart = ({ data }) => {
